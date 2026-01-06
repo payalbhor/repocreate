@@ -9,7 +9,6 @@ energy_output = st.number_input("Energy Output Value:", min_value=0.0)
 renewability_index = st.number_input("Renewability Index:", min_value=0.0)
 cost_efficiency = st.number_input("Cost efficiency:", min_value=0.0)
 
-# Load trained model
 with open("green_tech_model.pkl", "rb") as file:
     model = pickle.load(file)
 
